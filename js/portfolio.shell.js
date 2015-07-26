@@ -16,8 +16,9 @@ prt.shell = (function() {
     + '</section>'
     + '<div class="prt-shell-modal"></div>'
   },
-
+  // clear out the container object -- this prevents any extra content from being mapped
   stateMap = { $container: null },
+  // establish the jqueryMap object
   jqueryMap = {},
   // make these available globally
   setJqueryMap, initModule;
@@ -28,6 +29,7 @@ prt.shell = (function() {
 
   // begin DOM methods
   setJqueryMap = function() {
+    // improve performance to cache all jquery collections 
     var $container = stateMap.$container;
     jqueryMap = { $container: $container};
   };
@@ -37,10 +39,12 @@ prt.shell = (function() {
   // end event handlers
 
   // begin public methods
+
   initModule = function($container) {
     stateMap.$container = $container;
     $container.html(configMap.main_html);
     setJqueryMap();
   };
+  // return the init module as an object instance of itself
   return { initModule: initModule };
 }());
