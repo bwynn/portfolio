@@ -28,13 +28,13 @@ body {
   position: relative;
   top: 15%;
   display: block;
-  width: 300px;
-  height: 200px;
+  width: 30%;
+  height: 40%;
   margin: 0 auto;
   background-color: #222;
 }
 .prt-shell-nav {
-  top: 65%;
+  top: 70%;
   height: 35%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,4 +58,5 @@ body {
   left: 10%;
   background-color: red;
   z-index: 2;
+  display: none;
 }

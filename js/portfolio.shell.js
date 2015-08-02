@@ -1,3 +1,4 @@
+// --------------------- BEGIN MODULE SCOPE VARIABLES --------------------------
 prt.shell = (function() {
   // create module scope variable
   var configMap = {
@@ -22,23 +23,23 @@ prt.shell = (function() {
   jqueryMap = {},
   // make these available globally
   setJqueryMap, initModule;
-  // end module scope variables
+  // ------------------------- END MODULE SCOPE VARIABLES ----------------------
 
-  // begin utility methods
-  // end utility methods
+  // ------------------------- BEGIN UTILITY METHODS ---------------------------
+  // ------------------------- END UTILITY METHODS -----------------------------
 
-  // begin DOM methods
+  // ------------------------- BEGIN DOM METHODS -------------------------------
   setJqueryMap = function() {
-    // improve performance to cache all jquery collections 
+    // improve performance to cache all jquery collections
     var $container = stateMap.$container;
     jqueryMap = { $container: $container};
   };
-  // end DOM methods
+  // ------------------------- END DOM METHODS ---------------------------------
 
-  // begin event handlers
-  // end event handlers
+  // ------------------------- BEGIN EVENT HANDLERS ----------------------------
+  // ------------------------- END EVENT METHODS -------------------------------
 
-  // begin public methods
+  // ------------------------- BEGIN PUBLIC METHODS ----------------------------
 
   initModule = function($container) {
     stateMap.$container = $container;
@@ -47,4 +48,5 @@ prt.shell = (function() {
   };
   // return the init module as an object instance of itself
   return { initModule: initModule };
+  // ------------------------- END PUBLIC METHODS ------------------------------
 }());
