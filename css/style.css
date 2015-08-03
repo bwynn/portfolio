@@ -163,6 +163,7 @@ a:hover {
   background: url("../img/brian.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: .1em;
 }
 
 #sub-header h3 {
@@ -172,7 +173,7 @@ a:hover {
 .prt-shell-nav h1 {
   font-size: 1.6em;
   box-sixing: border-box;
-  padding: .2em;
+  padding: .3em;
 }
 
 /* =============================================================================
@@ -203,4 +204,5 @@ a:hover {
     height: 10em;
     margin: 2em;
   }
+
 }
