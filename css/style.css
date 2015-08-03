@@ -88,7 +88,7 @@ h3 {
   width: 18em;
   height: 18em;
   margin: 2em auto;
-  background-color: #222;
+  background-color: #444;
 }
 .prt-shell-nav {
   padding: 1em 0;
@@ -137,8 +137,19 @@ h3 {
   padding-top: 1em;
 }
 
+.prt-shell-portrait {
+  background: url("../img/brian.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #sub-header h3 {
   padding: 0 1.2em;
+}
+
+.prt-shell-nav h1 {
+  box-sixing: border-box;
+  padding: .2em;
 }
 
 /* =============================================================================
