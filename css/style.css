@@ -43,7 +43,7 @@ div#portfolio,
 
 body {
   font: 18px 'Droid Sans', Helvetica, sans-serif;
-  color: #434343;
+  color: #333;
   background-color: #F5F5F1;
 }
 
@@ -53,6 +53,15 @@ h1 {
 
 h3 {
   font-size: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: #FCFCF8;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 
@@ -67,6 +76,7 @@ h3 {
 }
 .prt-shell-header {
   background-color: #333;
+  overflow: hidden;
 }
 
 .prt-shell-header,
@@ -78,7 +88,7 @@ h3 {
   width: 40%;
 }
 .prt-shell-content {
-  background-color: #888;
+  background-color: #FCFCF8;
   position: relative;
   z-index: 1;
 }
@@ -122,6 +132,18 @@ h3 {
 /* =============================================================================
     Header Styles
 ============================================================================= */
+.prt-shell-links > ul {
+  list-style-type: none;
+  height: inherit;
+}
+.prt-shell-links > ul > li {
+  display: inline-block;
+  padding: .8em;
+}
+
+.prt-shell-links > ul > li > a:hover {
+  color: #D6D6D3;
+}
 
 /* =============================================================================
     Content Styles
@@ -148,6 +170,7 @@ h3 {
 }
 
 .prt-shell-nav h1 {
+  font-size: 1.6em;
   box-sixing: border-box;
   padding: .2em;
 }
@@ -160,6 +183,19 @@ h3 {
     Media Queries
 ============================================================================= */
 @media only screen and (max-width: 767px) {
+
+  /* Shell Styles */
+  html,
+  body,
+  div#portfolio,
+  .prt-shell-content {
+    height: 100em;
+  }
+
+  .prt-shell-links {
+    width: 50%;
+  }
+
   .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
     min-width: none;
     max-width: none;
