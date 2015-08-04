@@ -122,11 +122,10 @@ a:hover {
   position: absolute;
   top: 10%;
   width: 80%;
-  height: 80%;
+  border-radius: 3px;
+  min-height: 500px;
   left: 10%;
-  background-color: red;
-  z-index: 2;
-  display: none;
+  z-index: 3;
 }
 
 /* =============================================================================
@@ -179,11 +178,127 @@ a:hover {
 /* =============================================================================
     Modal Styles
 ============================================================================= */
+.prt-shell-modal {
+  background-color: #F5F5F1;
+}
+
+#closeBtn {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border: 3px solid #555;
+  border-radius: 50%;
+  background-color: #888;
+  position: relative;
+  top: -.8em;
+  left: -.8em;
+  cursor: pointer;
+}
+
+#closeBtn:before {
+  background: #555;
+  content: "";
+  height: 26px;
+  width: 3px;
+  top: -2px;
+  left: 10px;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+     -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+}
+
+#closeBtn:after {
+  background: #555;
+  content: "";
+  height: 26px;
+  width: 3px;
+  top: -27px;
+  left: 11px;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+
+article.modal-featured-project {
+  position: relative;
+  top: -1.8em;
+}
+
+figure.modal-img,
+.modal-header {
+    float: left;
+}
+
+figure.modal-img {
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  background-color: #333;
+  margin: 1em;
+}
+
+.modal-header {
+  display: inline-block;
+  padding: .3em;
+}
+
+.modal-copy {
+  padding: 4em .5em 2em;
+}
+
+.project-containers {
+  width: 100%;
+  -webkit-display: flex;
+  -ms-display: flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  justify-content: center;
+  justify-content: center;
+}
+
+.project-containers section {
+  flex-grow: 1;
+  display: inline-block;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.project-containers section > ul {
+  padding: .2em 1em;
+}
+
+.project-containers section > ul > li > a {
+  color: #333;
+}
+
+.project-containers section.project-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  opacity: .9;
+  z-index: 2;
+}
 
 /* =============================================================================
     Media Queries
 ============================================================================= */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
 
   /* Shell Styles */
   html,
@@ -203,6 +318,43 @@ a:hover {
     width: 90%;
     height: 10em;
     margin: 2em;
+  }
+
+  .prt-shell-modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  figure.modal-img {
+    height: 250px;
+    width: 80%;
+    display: block;
+    margin: 1em auto;
+  }
+
+  figure.modal-img,
+  .modal-header {
+    float: none;
+  }
+
+  .modal-header {
+    margin: .5em;
+  }
+
+  .modal-header,
+  .modal-copy {
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .modal-copy {
+    margin: 1em;
+  }
+
+  .project-containers section {
+    width: 100%;
   }
 
 }
