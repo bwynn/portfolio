@@ -365,7 +365,7 @@ figure.modal-img {
     height: 250px;
     width: 80%;
     display: block;
-    margin: 1em auto;
+    margin: 3em auto 1em;
   }
 
   figure.modal-img,
