@@ -1,32 +1,45 @@
 // for events, create a constructor function that takes objects and callbacks
 // that handle the different function properties as an event.
 
-var projectLinks = $(".prt-shell-nav > div");
+// create a modal object to hold property and animation properties
+var modal = {
 
-projectLinks.on("click", function() {
-  var modalBackground = $(".modal-background");
-  var prtShellModal = $(".prt-shell-modal");
+};
 
-  modalBackground.show();
-  prtShellModal.show();
-});
+// create an element map object to hold all values within the page.
+var elem = {
+  body: $("body"),
+  projectLinks: $(".prt-shell-nav > div"),
+  modalBackground: $(".modal-background"),
+  prtShellModal: $(".prt-shell-modal"),
+  closeButton: $("#closeBtn"),
+  mobileClose: $("#mobileClose"),
+  modalWindow: $(".prt-shell-modal")
+};
 
-// get modal background
-var modalBackground = $(".modal-background");
-// get desktop close button
-var closeButton = $("#closeBtn");
-// get mobile close button
-var mobileClose = $("#mobileClose");
-// get modal window
-var modalWindow = $(".prt-shell-modal");
-
-var eventHandler = function(obj) {
-  obj.on("click", function() {
-    modalBackground.hide();
-    modalWindow.hide();
+var showModalEvent = function() {
+  elem.projectLinks.on("click", function() {
+    elem.body.scrollTop(0);
+    elem.modalBackground.show();
+    elem.prtShellModal.show();
   });
 };
 
-eventHandler(closeButton);
-eventHandler(mobileClose);
-eventHandler(modalBackground);
+// get modal window
+var modalWindow = $(".prt-shell-modal");
+
+var closeModalEvent = function(obj) {
+  obj.on("click", function() {
+    elem.modalBackground.hide();
+    elem.modalWindow.hide();
+  });
+};
+
+var initModule = function() {
+  showModalEvent();
+  closeModalEvent(elem.closeButton);
+  closeModalEvent(elem.mobileClose);
+  closeModalEvent(elem.modalBackground);
+};
+
+initModule();
