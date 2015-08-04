@@ -107,7 +107,7 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-flow: row-wrap;
   flex-flow: row-wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
@@ -210,8 +210,8 @@ a:hover {
   content: "";
   height: 26px;
   width: 3px;
-  top: -2px;
-  left: 10px;
+  top: -3px;
+  left: 8px;
   display: block;
   position: relative;
   -webkit-transform: rotate(135deg);
@@ -226,7 +226,7 @@ a:hover {
   height: 26px;
   width: 3px;
   top: -27px;
-  left: 11px;
+  left: 10px;
   display: block;
   position: relative;
   -webkit-transform: rotate(45deg);
