@@ -180,6 +180,7 @@ a:hover {
 ============================================================================= */
 .prt-shell-modal {
   background-color: #F5F5F1;
+  box-shadow: 1px 1px 15px 3px #333
 }
 
 #closeBtn {
@@ -193,6 +194,9 @@ a:hover {
   top: -.8em;
   left: -.8em;
   cursor: pointer;
+  -webkit-transition: .3s background ease-out;
+  -moz-transition: .3s background ease-out;
+  transition: .3s background ease-out;
 }
 
 #closeBtn:before {
@@ -223,6 +227,14 @@ a:hover {
     -moz-transform: rotate(45deg);
      -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
+}
+
+#closeBtn:hover {
+  background-color: #F5F5F1;
+}
+
+#mobileClose {
+  display: none;
 }
 
 article.modal-featured-project {
@@ -268,7 +280,7 @@ figure.modal-img {
 .project-containers section {
   flex-grow: 1;
   display: inline-block;
-  padding: 1em;
+  padding: 0 1em 1em;
   box-sizing: border-box;
 }
 
@@ -318,6 +330,29 @@ figure.modal-img {
     width: 90%;
     height: 10em;
     margin: 2em;
+  }
+
+  #closeBtn {
+    display: none;
+  }
+
+  #mobileClose {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #888;
+    padding: 0 .2em;
+    color: #FCFCF8;
+    z-index: 4;
+    cursor: pointer;
+    -webkit-transition: .3s background ease-out;
+    -moz-transition: .3s background ease-out;
+    transition: .3s background ease-out;
+  }
+
+  #mobileClose:hover {
+    background-color: #444;
   }
 
   .prt-shell-modal {
