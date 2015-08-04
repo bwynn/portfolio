@@ -117,6 +117,7 @@ a:hover {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   background-color: #555;
+  cursor: pointer;
 }
 .prt-shell-modal {
   position: absolute;
@@ -126,6 +127,7 @@ a:hover {
   min-height: 500px;
   left: 10%;
   z-index: 3;
+  display: none;
 }
 
 /* =============================================================================
@@ -173,6 +175,10 @@ a:hover {
   font-size: 1.6em;
   box-sixing: border-box;
   padding: .3em;
+}
+
+.prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
+  background-color: #999;
 }
 
 /* =============================================================================
@@ -305,6 +311,7 @@ figure.modal-img {
   background-color: #333;
   opacity: .9;
   z-index: 2;
+  display: none;
 }
 
 /* =============================================================================
