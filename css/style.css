@@ -112,18 +112,6 @@ a:hover {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-.prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
-  max-width: 24%;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  height: 100%;
-  cursor: pointer;
-  background-color: #333;
-  border-radius: 2px;
-  -webkit-transition: .4s background ease-in-out;
-  -moz-transition: .4s background ease-in-out;
-  transition: .4s background ease-in-out;
-}
 .prt-shell-modal {
   position: absolute;
   top: 10%;
@@ -186,18 +174,32 @@ a:hover {
   text-shadow: 2px 2px 3px #555;
 }
 
-.prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
-  background-color: #9f9f9f;
+.prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
+  max-width: 24%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bacground-position: center;
+  border-radius: 2px;
+  -webkit-transition: .4s background ease-in-out;
+  -moz-transition: .4s background ease-in-out;
+  transition: .4s background ease-in-out;
 }
 
-figure.prj-img {
-  height: 60%;
-  width: 100%;
-  background-image: url("../img/sw_layout.png");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
+.prt-shell-prj-1 {
+  background-image: url("../img/waves_preview.png");
+}
+
+.prt-shell-prj-3 {
+  background-image: url("../img/joshuatree_lg.png");
+}
+
+.prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
+  background-color: #9f9f9f;
 }
 
 /* =============================================================================
@@ -222,6 +224,11 @@ figure.prj-img {
   -webkit-transition: .3s background ease-out;
   -moz-transition: .3s background ease-out;
   transition: .3s background ease-out;
+}
+
+#closeBtn:hover {
+  height: 35px;
+  width: 35px;
 }
 
 #closeBtn:before {
@@ -274,19 +281,23 @@ figure.modal-img,
 
 figure.modal-img {
   height: 250px;
-  width: 250px;
+  width: 300px;
   display: inline-block;
-  background-color: #333;
   margin: 1em;
+  background-image: url("../img/sw_layout.png");
+  background-position: center;
+  background-size: 460px;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .modal-header {
   display: inline-block;
-  padding: .3em;
+  padding: .4em 0;
 }
 
 .modal-copy {
-  padding: 4em .5em 2em;
+  padding: 4.5em .5em 2em;
 }
 
 .project-containers {
@@ -331,6 +342,7 @@ figure.modal-img {
   opacity: .9;
   z-index: 2;
   display: none;
+  cursor: pointer;
 }
 
 /* =============================================================================
