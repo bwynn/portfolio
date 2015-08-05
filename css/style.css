@@ -113,13 +113,16 @@ a:hover {
   justify-content: space-around;
 }
 .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
-  max-width: 20%;
+  max-width: 24%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
   height: 100%;
   cursor: pointer;
-  background-color: #666;
+  background-color: #333;
   border-radius: 2px;
+  -webkit-transition: .4s background ease-in-out;
+  -moz-transition: .4s background ease-in-out;
+  transition: .4s background ease-in-out;
 }
 .prt-shell-modal {
   position: absolute;
@@ -179,14 +182,12 @@ a:hover {
   padding: .3em;
   position: relative;
   z-index: 2;
+  color: #FCFCF8;
+  text-shadow: 2px 2px 3px #555;
 }
 
 .prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
   background-color: #9f9f9f;
-}
-
-.prt-shell-nav .prt-shell-prj-3 figure.prj-img {
-  top: -34px;
 }
 
 figure.prj-img {
@@ -359,10 +360,6 @@ figure.modal-img {
 
   figure.prj-img {
     height: 80%;
-  }
-
-  .prt-shell-nav .prt-shell-prj-3 figure.prj-img {
-    top: 0;
   }
 
   #closeBtn {
