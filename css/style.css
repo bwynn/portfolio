@@ -103,12 +103,12 @@ a:hover {
 .prt-shell-nav {
   padding: 1em 0;
   box-sizing: border-box;
-  height: 10em;
+  height: 15em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row-wrap;
-  flex-flow: row-wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
@@ -116,8 +116,10 @@ a:hover {
   max-width: 20%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
-  background-color: #555;
+  height: 100%;
   cursor: pointer;
+  background-color: #666;
+  border-radius: 2px;
 }
 .prt-shell-modal {
   position: absolute;
@@ -175,10 +177,26 @@ a:hover {
   font-size: 1.6em;
   box-sixing: border-box;
   padding: .3em;
+  position: relative;
+  z-index: 2;
 }
 
 .prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
-  background-color: #999;
+  background-color: #9f9f9f;
+}
+
+.prt-shell-nav .prt-shell-prj-3 figure.prj-img {
+  top: -34px;
+}
+
+figure.prj-img {
+  height: 60%;
+  width: 100%;
+  background-image: url("../img/sw_layout.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
 /* =============================================================================
@@ -210,8 +228,8 @@ a:hover {
   content: "";
   height: 26px;
   width: 3px;
-  top: -3px;
-  left: 8px;
+  top: -2px;
+  left: 10px;
   display: block;
   position: relative;
   -webkit-transform: rotate(135deg);
@@ -279,7 +297,7 @@ figure.modal-img {
   flex-flow: row wrap;
   -webkit-align-content: stretch;
   align-content: stretch;
-  justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -335,8 +353,16 @@ figure.modal-img {
     min-width: none;
     max-width: none;
     width: 90%;
-    height: 10em;
+    height: 20em;
     margin: 2em;
+  }
+
+  figure.prj-img {
+    height: 80%;
+  }
+
+  .prt-shell-nav .prt-shell-prj-3 figure.prj-img {
+    top: 0;
   }
 
   #closeBtn {

@@ -39,7 +39,7 @@ var closeModalEvent = function(obj1, obj2, obj3) {
     });
     obj3.fadeOut(modal.time_closed, function() {
       obj3.hide();
-      obj2.css("opacity", "1")
+      obj2.css("opacity", "1");
     });
   });
 };
