@@ -26,7 +26,9 @@ var elem = {
 var showModalEvent = function(obj1, obj2, obj3, obj4) {
   obj1.on("click", function() {
     obj2.scrollTop(0);
-    obj3.fadeIn(modal.time_open_bckgd);
+    obj3.fadeIn(modal.time_open_bckgd, function(){
+      obj3.css("opacity", 0.85);
+    });
     obj4.fadeIn(modal.time_open_window);
   });
 };
