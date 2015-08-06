@@ -341,6 +341,11 @@ figure.modal-img {
   box-sizing: border-box;
 }
 
+.project-containers section > h3 {
+  background-color: #999;
+  text-align: center;
+}
+
 .project-containers section > ul {
   padding: .2em 1em;
 }
