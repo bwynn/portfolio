@@ -319,6 +319,10 @@ figure.modal-img {
   padding: .2em 1em;
 }
 
+.project-containers section > ul > li {
+  margin: .5em 0;
+}
+
 .project-containers section > ul > li > a {
   color: #333;
 }
@@ -401,6 +405,7 @@ figure.modal-img {
   figure.modal-img {
     height: 250px;
     width: 80%;
+    background-size: 670px;
     display: block;
     margin: 3em auto 1em;
   }
