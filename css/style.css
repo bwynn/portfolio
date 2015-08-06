@@ -95,7 +95,8 @@ a:hover {
 .prt-shell-portrait {
   position: relative;
   display: block;
-  width: 18em;
+  width: 100%;
+  max-width: 18em;
   height: 18em;
   margin: 2em auto;
   background-color: #444;
@@ -170,8 +171,10 @@ a:hover {
   padding: .3em;
   position: relative;
   z-index: 2;
-  color: #FCFCF8;
   text-shadow: 2px 2px 3px #555;
+  -webkit-transition: .4s color ease;
+  -moz-transition: .4s color ease;
+  transition: .4s color ease;
 }
 
 .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
@@ -181,6 +184,7 @@ a:hover {
   height: 100%;
   cursor: pointer;
   background-color: #333;
+  color: #FCFCF8;
   background-repeat: no-repeat;
   background-size: cover;
   bacground-position: center;
@@ -200,6 +204,7 @@ a:hover {
 
 .prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
   background-color: #9f9f9f;
+  color: #999;
 }
 
 /* =============================================================================
@@ -235,6 +240,16 @@ a:hover {
   left: 10px;
   display: block;
   position: relative;
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+  -webkit-transition: .3s ease-out;
+     -moz-transition: .3s ease-out;
+          transition: .3s ease-out;
+}
+
+#closeBtn:hover:before {
   -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
      -ms-transform: rotate(135deg);
@@ -250,6 +265,16 @@ a:hover {
   left: 10px;
   display: block;
   position: relative;
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+  -webkit-transition: .3s ease-out;
+     -moz-transition: .3s ease-out;
+          transition: .3s ease-out;
+}
+
+#closeBtn:hover:after {
   -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
      -ms-transform: rotate(45deg);
@@ -297,8 +322,8 @@ figure.modal-img {
 
 .project-containers {
   width: 100%;
-  -webkit-display: flex;
-  -ms-display: flexbox;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -309,6 +334,7 @@ figure.modal-img {
 }
 
 .project-containers section {
+  -webkit-flex-grow: 1;
   flex-grow: 1;
   display: inline-block;
   padding: 0 1em 1em;
