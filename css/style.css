@@ -161,6 +161,15 @@ a:hover {
   border-radius: .1em;
 }
 
+.prt-shell-content > article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.prt-shell-content > article > p {
+  padding: 2em;
+}
+
 #sub-header h3 {
   padding: 0 1.2em;
 }
@@ -392,6 +401,10 @@ figure.modal-img {
     width: 50%;
   }
 
+  .prt-shell-content > article {
+    width: 98%;
+  }
+
   .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
     min-width: none;
     max-width: none;
@@ -465,4 +478,4 @@ figure.modal-img {
     width: 100%;
   }
 
-}
+} /* end of media query */

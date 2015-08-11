@@ -28,15 +28,15 @@
 
   var wavesProject = {
     title: "Waves",
-    content: "An ongoing personal project, this single page application gathers weather data from the WorldWeatherOnline API and passes it into the page. You can check the waves at 3 of the most consistent waves in California, as well as your current weather conditions, using a zip code input, all with live data being pulled. This site features include a css flexible box layout, AJAX calls to the WWO API, content retrieval from a json data file, and dom generation based on object information.",
-    tools: ["html", "css", "javascript/jquery", "json", "AJAX"],
-    browsers: ["Chrome 44", "Firefox 39", "Safari 8", "IE11"],
+    content: "An ongoing personal project, this single page application gathers weather data from the WorldWeatherOnline API and passes it into the page. You can check the waves at 3 of the most consistent waves in California, as well as your current weather conditions. This app is built in jQuery/js as a single page application.",
+    tools: ["ajax", "json", "js/jquery", "css"],
+    browsers: ["Chrome 44", "Firefox 39", "Safari 8", "IE 11"],
     links: ["http://www.brianwynndesign.com/waves/", "https://github.com/bwynn/waves_js/"]
   };
 
   var sandboxProject = {
     title: "Sandbox",
-    content: "A working development sandbox featuring smaller projects. The Memory Game is a basic memory game written in vanilla javascript. The Gear Inch Calculator uses Twitter's Bootstrap css framework, and is written using javascript and the jQuery library. Flexible Layout is a template project using css3's flexbox, I'm big into responsive design and the power that flexbox offers over traditional floats and relative widths makes for quick and easy layouts, using minimal code. The Style Library is a css library that I've been working on, using a grid-template similar to Bootstrap. I'm using this library on some of my upcoming projects, but a sneak peek can be seen here.",
+    content: "A working development sandbox featuring smaller projects. The Memory Game is a small memory game written in js/jQuery. The Gear Inch Calculator utilizes Twitter's Bootstrap css framework, and is written using js/jQuery. The Flexible Layout project is a template layout using css3's flexbox. I'm big into responsive design and the power that flexbox offers over traditional floats and relative widths makes for quick and sleek layouts, using minimal code. The Style Library is a css library that I've been working on, using a grid-template similar to Bootstrap. I'm using this library on some of my upcoming projects, but a sneak peek can be seen here.",
     tools: ["html", "css", "javascript/jQuery", "bootstrap"],
     browsers: ["Chrome 44", "Firefox 39", "Safari 8"],
     links: ["http://www.brianwynndesign.com/sandbox/", "https://github.com/bwynn/sandbox/"]
@@ -114,7 +114,7 @@
 
   // ------------------------- BEGIN EVENT HANDLERS --------------------------- */
 
-  // This function displays the modal window when a project tile has been clicked on
+  // Displays the modal window when a project tile has been clicked on
   var showModalEvent = function(obj1, obj2, obj3, obj4) {
     obj1.on("click", function() {
       // initialize the modal window's content
