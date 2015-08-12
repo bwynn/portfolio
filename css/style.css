@@ -94,11 +94,13 @@ a:hover {
 }
 .prt-shell-portrait {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 100%;
+  float: left;
   max-width: 18em;
   height: 18em;
-  margin: 2em auto;
+  margin: 1em 2em 1em 1em;
+  box-sizing: border-box;
   background-color: #444;
 }
 .prt-shell-nav {
@@ -154,6 +156,12 @@ a:hover {
   padding-top: 1em;
 }
 
+#content-container {
+  width: 75%;
+  margin: 2em auto;
+  height: 20em;
+}
+
 .prt-shell-portrait {
   background: url("../img/brian.jpg");
   background-repeat: no-repeat;
@@ -161,9 +169,8 @@ a:hover {
   border-radius: .1em;
 }
 
-.prt-shell-content > article {
-  width: 50%;
-  margin: 0 auto;
+div#content-container > article {
+  padding-top: 1em;
 }
 
 .prt-shell-content > article > p {
@@ -323,6 +330,7 @@ figure.modal-img {
 .modal-header {
   display: inline-block;
   padding: .4em 0;
+  font-size: 1.8em;
 }
 
 .modal-copy {
@@ -401,8 +409,23 @@ figure.modal-img {
     width: 50%;
   }
 
+  #content-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .prt-shell-portrait {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
   .prt-shell-content > article {
     width: 98%;
+  }
+
+  div#content-container > article {
+    padding: 2em;
   }
 
   .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
@@ -449,7 +472,7 @@ figure.modal-img {
   figure.modal-img {
     height: 250px;
     width: 80%;
-    background-size: 670px;
+    background-size: contain;
     display: block;
     margin: 3em auto 1em;
   }
@@ -457,6 +480,7 @@ figure.modal-img {
   figure.modal-img,
   .modal-header {
     float: none;
+    width: 100%;
   }
 
   .modal-header {
