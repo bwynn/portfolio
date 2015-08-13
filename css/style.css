@@ -231,6 +231,7 @@ div#content-container > article {
   background-color: #AAA9A3;
   color: #FCFCF8;
   text-shadow: 2px 2px 2px #999;
+  height: inherit;
 }
 
 /* =============================================================================
@@ -443,7 +444,8 @@ figure.modal-img {
     max-width: none;
     width: 90%;
     height: 20em;
-    margin: 2em;
+    margin: 1em;
+    padding: 2em;
   }
 
   figure.prj-img {
