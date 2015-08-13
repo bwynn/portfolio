@@ -173,8 +173,8 @@ div#content-container > article {
   padding-top: 1em;
 }
 
-.prt-shell-content > article > p {
-  padding: 2em;
+#content-container > article > p {
+  font-size: 1.1em;
 }
 
 #sub-header h3 {
@@ -221,6 +221,16 @@ div#content-container > article {
 .prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
   background-color: #9f9f9f;
   color: #999;
+}
+
+#sub-header {
+  padding: 2em 0;
+}
+
+#lower-divider {
+  background-color: #AAA9A3;
+  color: #FCFCF8;
+  text-shadow: 2px 2px 2px #999;
 }
 
 /* =============================================================================
