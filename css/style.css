@@ -99,7 +99,7 @@ a:hover {
   float: left;
   max-width: 18em;
   height: 18em;
-  margin: 1em 2em 1em 1em;
+  margin: 3em 2em;
   box-sizing: border-box;
   background-color: #444;
 }
@@ -146,20 +146,20 @@ a:hover {
     Content Styles
 ============================================================================= */
 
-#title h1,
-#title h3 {
-  text-align: center;
+#content-container h1,
+#content-container h3 {
   padding: 1rem;
 }
 
-#title h1 {
-  padding-top: 1em;
+#content-container h1 {
+  padding-top: 1.2em;
 }
 
 #content-container {
-  width: 75%;
-  margin: 2em auto;
-  height: 20em;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .prt-shell-portrait {
@@ -170,7 +170,7 @@ a:hover {
 }
 
 div#content-container > article {
-  padding-top: 1em;
+  padding: 1em 1em 2em;
 }
 
 #content-container > article > p {
@@ -179,6 +179,7 @@ div#content-container > article {
 
 #sub-header h3 {
   padding: 0 1.2em;
+  float: right;
 }
 
 .prt-shell-nav h1 {
@@ -425,9 +426,14 @@ figure.modal-img {
     height: auto;
   }
 
+  #content-container h1,
+  #content-container h3 {
+    text-align: center;
+  }
+
   .prt-shell-portrait {
     display: block;
-    margin: 0 auto;
+    margin: 2em auto;
     float: none;
   }
 
