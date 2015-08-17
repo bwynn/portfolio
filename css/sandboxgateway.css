@@ -1,0 +1,17 @@
+#sandBoxIndex {
+  background-color: #333;
+}
+
+#sandBoxIndex nav > ul > li {
+  margin: 0 .5em;
+  padding: 1em 0;
+  font-size: 1.5em;
+}
+
+#sandBoxIndex nav > ul > li:first-child {
+  margin-top: 1em;
+}
+
+#sandBoxIndex nav > ul > li > a {
+  display: block;
+}
