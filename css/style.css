@@ -451,7 +451,7 @@ figure.modal-img {
   }
 
   .prt-shell-links {
-    width: 50%;
+    width: 100%;
   }
 
   #content-container {
@@ -530,7 +530,6 @@ figure.modal-img {
   figure.modal-img,
   .modal-header {
     float: none;
-    width: 100%;
   }
 
   .modal-header {
@@ -539,7 +538,7 @@ figure.modal-img {
 
   .modal-header,
   .modal-copy {
-    display: block;
+    display: inline-block;
     padding: 0;
     box-sizing: border-box;
   }

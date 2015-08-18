@@ -1,6 +1,6 @@
 // for events, create a constructor function that takes objects and callbacks
 // that handle the different function properties as an event.
-//(function() {
+(function() {
   // ---------------------------- PROJECT SCOPE VARIABLES --------------------- */
   // create a modal object to hold property and animation properties
   var modal = {
@@ -164,4 +164,4 @@
 
   initModule();
   //return initModule();
-//}());
+}());
