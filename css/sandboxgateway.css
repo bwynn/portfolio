@@ -1,17 +1,74 @@
 #sandBoxIndex {
   background-color: #333;
+  color: white;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flexbox;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: stretch;
+  align-content: stretch;
 }
 
-#sandBoxIndex nav > ul > li {
-  margin: 0 .5em;
+#sandBoxIndex .project {
+  margin: 1em;
+  padding: 1em;
+  width: 40%;
+  box-sizing: border-box;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+#sandBoxIndex .project:nth-child(2),
+#sandBoxIndex .project:nth-child(3) {
+  background-color: #444;
+}
+
+#sandBoxIndex .project figure.project-img {
+  width: 90%;
+  height: 200px;
+  background: green;
+}
+
+#sandBoxIndex .project h2 {
   padding: 1em 0;
-  font-size: 1.5em;
 }
 
-#sandBoxIndex nav > ul > li:first-child {
-  margin-top: 1em;
+#sandBoxIndex .project h3,
+#sandBoxIndex .project li {
+  padding: .2em 0;
 }
 
-#sandBoxIndex nav > ul > li > a {
+#sandBoxIndex .project p {
+  padding: 1em 0;
+  line-height: 1.4;
+}
+
+#sandBoxIndex .project a {
   display: block;
+  margin: .5em 0;
+}
+
+#sandBoxIndex .project h3 {
+  font-size: 1.3em;
+}
+
+#sandBoxIndex .project ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #sandBoxIndex .project {
+    width: 100%;
+  }
+
+  #sandBoxIndex .project:nth-child(3) {
+    background-color: initial;
+  }
+
+  #sandBoxIndex .project:nth-child(even) {
+    background-color: #444;
+  }
 }

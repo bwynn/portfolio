@@ -184,14 +184,14 @@ div#content-container > article {
 
 .prt-shell-nav h1 {
   font-size: 1.6em;
-  box-sixing: border-box;
   padding: .3em;
   position: relative;
   z-index: 2;
+  background-color: rgba(0,0,0, .5);
   text-shadow: 2px 2px 3px #555;
-  -webkit-transition: .4s color ease;
-  -moz-transition: .4s color ease;
-  transition: .4s color ease;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
@@ -212,20 +212,29 @@ div#content-container > article {
 }
 
 .prt-shell-prj-1 {
-  background-image: url("../img/waves_preview.png");
+  background-image: url("../img/waves_tile.png");
+}
+
+.prt-shell-prj-2 {
+  background-image: url("../img/norgrendesign_tile.png");
 }
 
 .prt-shell-prj-3 {
-  background-image: url("../img/joshuatree_lg.png");
+  background-image: url("../img/southwest_tile.png");
+}
+
+.prt-shell-prj-4 {
+  background-image: url("../img/sandbox_tile.png");
 }
 
 .prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
   background-color: #9f9f9f;
-  color: #999;
+  color: yellow;
 }
 
 #sub-header {
   padding: 2em 0;
+  color: #333;
 }
 
 #lower-divider {
@@ -379,8 +388,32 @@ figure.modal-img {
   padding: .2em 1em;
 }
 
+.project-containers section.browsers > ul {
+  list-style-type: none;
+}
+
 .project-containers section > ul > li {
   margin: .5em 0;
+}
+
+.project-containers section.browsers > ul > li.chrome {
+  background: url("../img/chrome-icon.svg");
+}
+
+.project-containers section.browsers > ul > li.firefox {
+  background: url("../img/firefox-icon.svg");
+}
+
+.project-containers section.browsers > ul > li.safari {
+  background: url("../img/safari-icon.svg");
+}
+
+.project-containers section.browsers > ul li.chrome,
+.project-containers section.browsers > ul > li.firefox,
+.project-containers section.browsers > ul > li.safari,
+.project-containers section.browsers > ul > li.ie {
+  background-repeat: no-repeat;
+  padding-left: 1.39em;
 }
 
 .project-containers section > ul > li > a {
@@ -446,12 +479,11 @@ figure.modal-img {
   }
 
   .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
-    min-width: none;
     max-width: none;
     width: 90%;
     height: 20em;
     margin: 1em;
-    padding: 2em;
+    padding: 0;
   }
 
   figure.prj-img {
