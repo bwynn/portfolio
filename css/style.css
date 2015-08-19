@@ -220,7 +220,7 @@ div#content-container > article {
   color: #FCFCF8;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: 2px;
   -webkit-transition: .4s background ease-in-out;
   -moz-transition: .4s background ease-in-out;
@@ -353,9 +353,17 @@ figure.modal-img {
   margin: 1em;
   background-image: url("../img/sw_layout.png");
   background-position: center;
-  background-size: 460px;
   background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
+}
+
+figure#waves-modal-img.modal-img {
+  background-image: url("../img/waves-layout.png");
+}
+
+figure#sandbox-modal-img.modal-img {
+  background-image: url("../img/sandbox-layout.png");
 }
 
 .modal-header {
@@ -488,7 +496,11 @@ figure.modal-img {
     padding: 2em;
   }
 
-  .prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
+  #content-container > article > p {
+    padding-bottom: 1em;
+  }
+
+  .prj {
     max-width: none;
     width: 90%;
     height: 20em;
