@@ -11,6 +11,12 @@
   align-content: stretch;
 }
 
+#sandBoxIndex a.back-home {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+
 #sandBoxIndex .project {
   margin: 1em;
   padding: 1em;

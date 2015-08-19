@@ -254,8 +254,8 @@ div#content-container > article {
 }
 
 #lower-divider {
-  background-color: #222;
-  color: #FCFCF8;
+  background-color: #EDE4D5;
+  color: #333;
   text-shadow: 2px 2px 2px #999;
   height: inherit;
 }
