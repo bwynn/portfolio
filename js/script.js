@@ -95,17 +95,17 @@
 
   var projectSwitcher = function( elem ) {
     switch ( elem.attr("class") ) {
-      case "prt-shell-prj-1":
+      case "prj prt-shell-prj-1":
         // Modal content propagation
         modalBuilder(wavesProject);
         break;
-      case "prt-shell-prj-2":
+      case "prj prt-shell-prj-2":
         modalBuilder(ndProject);
         break;
-      case "prt-shell-prj-3":
+      case "prj prt-shell-prj-3":
         modalBuilder(swProject);
         break;
-      case "prt-shell-prj-4":
+      case "prj prt-shell-prj-4":
         modalBuilder(sandboxProject);
         break;
     }

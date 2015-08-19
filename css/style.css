@@ -106,7 +106,7 @@ a:hover {
 .prt-shell-nav {
   padding: 1em 0;
   box-sizing: border-box;
-  height: 15em;
+  height: 11.5em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,24 @@ a:hover {
   flex-flow: row wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
+.prt-shell-nav:hover > div.prj {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.prt-shell-nav:hover > div.prj {
+  opacity: .4;
+}
+
+.prt-shell-nav:hover > div.prj:hover {
+  opacity: 1;
+}
+
 .prt-shell-modal {
   position: absolute;
   top: 10%;
@@ -189,22 +206,21 @@ div#content-container > article {
   z-index: 2;
   background-color: rgba(0,0,0, .5);
   text-shadow: 2px 2px 3px #555;
-  -webkit-transition: .4s ease;
-  -moz-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.prt-shell-prj-1, .prt-shell-prj-2, .prt-shell-prj-3, .prt-shell-prj-4 {
+.prj {
   max-width: 24%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
   height: 100%;
   cursor: pointer;
-  background-color: #333;
   color: #FCFCF8;
   background-repeat: no-repeat;
   background-size: cover;
-  bacground-position: center;
+  background-position: center;
   border-radius: 2px;
   -webkit-transition: .4s background ease-in-out;
   -moz-transition: .4s background ease-in-out;
@@ -227,18 +243,12 @@ div#content-container > article {
   background-image: url("../img/sandbox_tile.png");
 }
 
-.prt-shell-prj-1:hover, .prt-shell-prj-2:hover, .prt-shell-prj-3:hover, .prt-shell-prj-4:hover {
-  background-color: #9f9f9f;
-  color: yellow;
-}
-
 #sub-header {
   padding: 2em 0;
-  color: #333;
 }
 
 #lower-divider {
-  background-color: #AAA9A3;
+  background-color: #222;
   color: #FCFCF8;
   text-shadow: 2px 2px 2px #999;
   height: inherit;
