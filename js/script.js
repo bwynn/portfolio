@@ -61,7 +61,7 @@
     modalTitle: $(".modal-header"),
     modalCopy: $(".modal-copy"),
     modalTools: $(".tools li"),
-    modalBrowsers: $(".browsers li"),
+    modalBrowsers: $(".browsers li span"),
     modalLinks: $(".project-links li"),
     modalImage: $(".modal-featured-project > figure")
   };
