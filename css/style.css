@@ -45,6 +45,8 @@ body {
   font: 18px 'Work Sans', Helvetica, sans-serif;
   color: #333;
   background-color: #F5F5F1;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -204,6 +206,7 @@ div#content-container > article {
 #sub-header h3 {
   padding: 0 1.2em;
   float: right;
+  font-weight: 300;
 }
 
 .prt-shell-nav h1 {
@@ -359,7 +362,6 @@ figure.modal-img {
   width: 300px;
   display: inline-block;
   margin: 1em;
-  background-image: url("../img/sw_layout.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -368,6 +370,14 @@ figure.modal-img {
 
 figure#waves-modal-img.modal-img {
   background-image: url("../img/waves-layout.png");
+}
+
+figure#nd-modal-img.modal-img {
+  background-image: url("../img/nd-layout.png");
+}
+
+figure#southwest-modal-img.modal-img {
+  background-image: url("../img/sw-layout.png");
 }
 
 figure#sandbox-modal-img.modal-img {
@@ -412,12 +422,12 @@ figure#sandbox-modal-img.modal-img {
 
 .project-containers section > ul {
   padding: .2em 1em;
-  margin-left: 2em;
 }
 
 .project-containers section.browsers > ul {
   list-style-type: none;
   margin-left: 0;
+  padding-left: 0;
 }
 
 .project-containers section > ul > li {
@@ -476,6 +486,23 @@ figure#sandbox-modal-img.modal-img {
 /* =============================================================================
     Media Queries
 ============================================================================= */
+@media only screen and (max-width: 950px) {
+  .prt-shell-portrait {
+    display: block;
+    margin: 2em auto;
+    float: none;
+  }
+
+  #content-container h1,
+  #content-container h3 {
+    text-align: center;
+  }
+
+  #content-container h1 {
+    padding-top: .4em;
+  }
+}
+
 @media only screen and (max-width: 800px) {
 
   /* Shell Styles */
@@ -493,17 +520,6 @@ figure#sandbox-modal-img.modal-img {
   #content-container {
     width: 100%;
     height: auto;
-  }
-
-  #content-container h1,
-  #content-container h3 {
-    text-align: center;
-  }
-
-  .prt-shell-portrait {
-    display: block;
-    margin: 2em auto;
-    float: none;
   }
 
   .prt-shell-content > article {
