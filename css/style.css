@@ -189,11 +189,31 @@ li {
 }
 
 .prt-shell-portrait {
-  background: url("../img/brian.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   border-radius: .1em;
+  background-size: contain;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1),
+only screen and (min--moz-device-pixel-ratio: 1),
+only screen and (min-device-pixel-ratio: 1) {
+  .prt-shell-portrait{
+    background-image: url("../img/brian.jpg");
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .prt-shell-portrait{
+    background-image: url("../img/brian_2x.jpg");
+  }
+}
+
 
 div#content-container > article {
   padding: 1em 1em 2em;
