@@ -25,7 +25,7 @@
     content: "A scalable portfolio site built for a Mechanical Engineering venture by Erik Norgren. Erik is recruiting for his design firm, and wanted the ability to engage potential business partners using a connect feature. The page's content is being propagated using json, which is being passed down into a single page application built using javascript and jquery. Erik is a good friend of mine, and he wants the ability to add features to the site, so I've set this project up with easy updating via feature modules. This site is fully responsive.",
     tools: ["html", "css", "javascript/jquery", "uriAnchor"],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
-    links: ["http://www.brianwynndesign.com/sites/norgrendesign/", "https://github.com/bwynn/norgren-design"]
+    links: ["http://www.brianwynndesign.com/sites/norgrendesign/", "https://github.com/bwynn/Norgren-Designs"]
   };
 
   var wavesProject = {
