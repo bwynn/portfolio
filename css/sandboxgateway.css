@@ -91,4 +91,17 @@
     background-color: #555;
     color: #222;
   }
+
+  #sandBoxIndex .project figure.project-img {
+    height: 150px;
+    width: 100%:
+    margin: 0;
+  }
 }
+
+/*@media only screen and (max-width: 500px) {
+  #sandBoxIndex .project figure.project-img {
+    height: 150px;
+    width: 100%:
+  }
+}*/
