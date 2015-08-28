@@ -461,6 +461,7 @@ figure#sandbox-modal-img.modal-img {
 .project-containers section.browsers > ul > li {
     height: 30px;
     background-size: contain;
+    background-position: left;
 }
 
 .project-containers section.browsers > ul > li.chrome {

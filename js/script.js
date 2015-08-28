@@ -14,7 +14,7 @@
     id: "southwest",
     imgId: "southwest-modal-img",
     title: "Southwest Roadtrip",
-    content: "A project that features big, bold retina pictures from a road trip I took with my wife in the fall of 2014. This project features a responsive gallery slider. The Southwest Roadtrip project is hand coded from the ground up, using javascript and utilizing the jQuery javascript library. Mobile touch events handled using the jQuery mobile framework.",
+    content: "A project that features big, bold retina pictures from a road trip I took with my wife in the fall of 2014. This project features a responsive gallery slider. The Southwest Roadtrip project is hand coded from the ground up, using javascript and utilizing the jQuery javascript library. Mobile touch events handled using the jQuery mobile library.",
     tools: ["html", "css", "js/jQuery", ""],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
     links: ["http://www.brianwynndesign.com/sites/southwest/", "https://github.com/bwynn/southwest"]
@@ -26,7 +26,7 @@
     title: "Norgren Design",
     content: "A scalable portfolio site built for a Mechanical Engineering venture by Erik Norgren. Erik is recruiting for his design firm, and wanted the ability to engage potential business partners using a connect feature. The page's content is being propagated using json, which is being passed down into a single page application built using javascript and jquery. Erik is a good friend of mine, and he wants the ability to add features to the site, so I've set this project up with easy updating via feature modules. This site is fully responsive.",
     tools: ["html", "css", "javascript/jQuery", ""],
-    browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
+    browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10"],
     links: ["http://www.brianwynndesign.com/sites/norgrendesign/", "https://github.com/bwynn/Norgren-Designs"]
   };
 
