@@ -459,9 +459,9 @@ figure#sandbox-modal-img.modal-img {
 }
 
 .project-containers section.browsers > ul > li {
+    position: relative;
     height: 30px;
-    background-size: contain;
-    background-position: left;
+    left: 0;
 }
 
 .project-containers section.browsers > ul > li.chrome {
@@ -481,10 +481,12 @@ figure#sandbox-modal-img.modal-img {
 .project-containers section.browsers > ul > li.safari,
 .project-containers section.browsers > ul > li.ie {
   background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 .project-containers section.browsers > ul > li span {
-  padding-left: 2em;
+  position: relative;
+  left: 35px;
 }
 
 .project-containers section > ul > li > a {
