@@ -196,7 +196,9 @@ li {
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1),
 only screen and (min--moz-device-pixel-ratio: 1),
-only screen and (min-device-pixel-ratio: 1) {
+only screen and (min-device-pixel-ratio: 1),
+only screen and (min-resolution: 96dpi),
+only screen and (min-resolution: 1dppx) {
   .prt-shell-portrait{
     background-image: url("../img/brian.jpg");
   }
@@ -282,6 +284,9 @@ div#content-container > article {
   color: #333;
   text-shadow: 2px 2px 2px #999;
   height: inherit;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box; 
 }
 
 /* =============================================================================

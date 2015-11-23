@@ -17,7 +17,7 @@ var model = (function() {
     content: "A scalable portfolio site built for a Mechanical Engineering venture by Erik Norgren. Erik is recruiting for his design firm, and wanted the ability to engage potential business partners using a connect feature. The page's content is stored as json data, and passed down into a single page application. Form validation and content templates all handled using Angular's extensible framework.",
     tools: ["css3", "json", "javascript/jQuery", "Angular JS"],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10"],
-    links: ["http://www.brianwynndesign.com/sites/norgrendesign/", "https://github.com/bwynn/Norgren-Designs"]
+    links: ["http://www.norgrendesigns.com", "https://github.com/bwynn/Norgren-Designs"]
   };
 
   var wavesProject = {
