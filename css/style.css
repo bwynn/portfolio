@@ -268,7 +268,7 @@ div#content-container > article {
 }
 
 .prt-shell-prj-3 {
-  background-image: url("../img/southwest_tile.png");
+  background-image: url("../img/gallry_tile.png");
 }
 
 .prt-shell-prj-4 {
@@ -286,7 +286,7 @@ div#content-container > article {
   height: inherit;
   margin: 0 auto;
   overflow: hidden;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* =============================================================================
@@ -400,8 +400,8 @@ figure#nd-modal-img.modal-img {
   background-image: url("../img/nd-layout.png");
 }
 
-figure#southwest-modal-img.modal-img {
-  background-image: url("../img/sw-layout.png");
+figure#gallry-modal-img.modal-img {
+  background-image: url("../img/gallry-layout.png");
 }
 
 figure#sandbox-modal-img.modal-img {
@@ -454,8 +454,12 @@ figure#sandbox-modal-img.modal-img {
   padding-left: 0;
 }
 
-#southwest .project-containers section.tools > ul > li:last-child  {
+#gallry .project-containers section.tools > ul > li  {
   display: none;
+}
+
+#gallry .project-containers section.tools > ul > li:first-child {
+  display: list-item;
 }
 
 .project-containers section > ul > li {

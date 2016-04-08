@@ -1,13 +1,13 @@
 var model = (function() {
 
-  var swProject = {
-    id: "southwest",
-    imgId: "southwest-modal-img",
-    title: "Southwest Roadtrip",
-    content: "A project that features big, bold retina pictures from a road trip I took with my wife in the fall of 2014. This project features a responsive gallery slider. The Southwest Roadtrip project is hand coded from the ground up, using javascript and utilizing the jQuery javascript library. Mobile touch events handled using the jQuery mobile library.",
-    tools: ["html", "css", "js/jQuery", ""],
+  var gallry = {
+    id: "gallry",
+    imgId: "gallry-modal-img",
+    title: "gallry.js",
+    content: "Gallry.js is a lightweight javascript image gallery slider library. Written in vanilla JavaScript, gallry.js is fully responsive and customizable, giving control over individual slide presentation, timing and easing control, and the ability to add as many instances of the gallery on the page as is desired.",
+    tools: ["javascript", "", "", ""],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
-    links: ["http://www.brianwynndesign.com/sites/southwest/", "https://github.com/bwynn/southwest"]
+    links: ["http://www.brianwynndesign.com/sites/gallry/", "https://github.com/bwynn/gallery"]
   };
 
   var ndProject = {
@@ -89,7 +89,7 @@ var model = (function() {
       modalBuilder(ndProject);
       break;
     case "prj prt-shell-prj-3":
-      modalBuilder(swProject);
+      modalBuilder(gallry);
       break;
     case "prj prt-shell-prj-4":
       modalBuilder(sandboxProject);
