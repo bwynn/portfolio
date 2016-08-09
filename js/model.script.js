@@ -14,10 +14,10 @@ var model = (function() {
     id: "norgren-design",
     imgId: "nd-modal-img",
     title: "Norgren Design",
-    content: "A scalable portfolio site built for a Mechanical Engineering venture by Erik Norgren. Erik is recruiting for his design firm, and wanted the ability to engage potential business partners using a connect feature. The page's content is stored as json data, and passed down into a single page application. Form validation and content templates all handled using Angular's extensible framework.",
-    tools: ["css3", "json", "javascript/jQuery", "Angular JS"],
+    content: "A full stack CMS application for Mechanical Engineer consultant, Erik Norgren. This application gives the client full content management, and handles messaging/contact service. Norgren Designs features Passport authentication for admin management, nodemailer node module for admin notification on the back end, a variety of Angular modules to handle states and animations, and is mobile driven on the front end.",
+    tools: ["MongoDB", "Express", "Angular", "Node"],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10"],
-    links: ["http://www.norgrendesigns.com", "https://github.com/bwynn/Norgren-Designs"]
+    links: ["http://norgrendesigns.heroku.com", "https://github.com/bwynn/Norgren-Designs"]
   };
 
   var wavesProject = {
