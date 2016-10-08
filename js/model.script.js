@@ -30,14 +30,14 @@ var model = (function() {
     links: ["http://www.brianwynndesign.com/sites/waves/", "https://github.com/bwynn/waves_js/"]
   };
 
-  var sandboxProject = {
-    id: "sandbox",
-    imgId: "sandbox-modal-img",
-    title: "Sandbox",
-    content: "A working development sandbox featuring smaller projects. The Memory Game is a small memory game written in js/jQuery. The Gear Inch Calculator utilizes Twitter's Bootstrap css framework, and is written using js/jQuery. The Flexible Layout project is a template layout using css3's flexbox. I'm big into responsive design and the power that flexbox offers over traditional floats and relative widths makes for quick and sleek layouts, using minimal code. The Clip Path project is intended as a working example of the clip-path property in css used as a css navigation tool.",
-    tools: ["html", "css", "javascript/jQuery", "Bootstrap"],
-    browsers: ["Chrome 44", "Firefox 39", "Safari 8"],
-    links: ["http://www.brianwynndesign.com/sites/sandbox/", "https://github.com/bwynn/sandbox/"]
+  var superCalcProject = {
+    id: "super-calc",
+    imgId: "super-calc-img",
+    title: "Super Calculator",
+    content: "This is a basic Angular application, deployed through Heroku on a Node server. While Super Calculator may be fairly rudimentary in it's programattic abilities, it serves as a good example of my test driven development process, using Karma/Jasmine for unit testing. It is fully responsive, and modular for future enhancements.",
+    tools: ["Angular.js", "Node.js", "Express", "Karma/Jasmine"],
+    browsers: ["All Modern Browsers supported"],
+    links: ["http://bwynn-super-calc.herokuapp.com", "https://github.com/bwynn/super-calculator/"]
   };
 
   // create an element map object to hold all values within the page.
@@ -92,7 +92,7 @@ var model = (function() {
       modalBuilder(gallry);
       break;
     case "prj prt-shell-prj-4":
-      modalBuilder(sandboxProject);
+      modalBuilder(superCalcProject);
       break;
     }
   };

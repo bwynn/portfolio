@@ -272,7 +272,7 @@ div#content-container > article {
 }
 
 .prt-shell-prj-4 {
-  background-image: url("../img/sandbox_tile.png");
+  background-image: url("../img/super-calc-ss.png");
 }
 
 #sub-header {
@@ -404,8 +404,8 @@ figure#gallry-modal-img.modal-img {
   background-image: url("../img/gallry-layout.png");
 }
 
-figure#sandbox-modal-img.modal-img {
-  background-image: url("../img/sandbox-layout.png");
+figure#super-calc-img.modal-img {
+  background-image: url("../img/super-calc-layout.png");
 }
 
 .modal-header {
