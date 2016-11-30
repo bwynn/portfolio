@@ -22,13 +22,13 @@ app.get('/', (req, res) => {
 
 // waves sub site
 app.get('/waves', (req, res) => {
-  res.sendFile(path.join(__dirname + './public/sites/waves/index.html'));
+  res.sendFile(path.join(__dirname + '/public/sites/waves/index.html'));
 });
 
 // gallry sub site
 app.get('/gallry', (req, res) => {
-  res.sendFile(path.join(__dirname + './public/sites/gallery/demo/index.html'));
-}); 
+  res.sendFile(path.join(__dirname + '/public/sites/gallery/demo/index.html'));
+});
 
 app.listen(port);
 
