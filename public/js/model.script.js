@@ -7,7 +7,7 @@ var model = (function() {
     content: "Gallry.js is a lightweight javascript image gallery slider library. Written in vanilla JavaScript, gallry.js is fully responsive and customizable, giving control over individual slide presentation, timing and easing control, and the ability to add as many instances of the gallery on the page as is desired.",
     tools: ["javascript", "", "", ""],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
-    links: ["/gallery/", "https://github.com/bwynn/gallery"]
+    links: ["/gallry", "https://github.com/bwynn/gallery"]
   };
 
   var ndProject = {
@@ -27,7 +27,7 @@ var model = (function() {
     content: "An ongoing personal project, this single page application gathers weather data from the WorldWeatherOnline API and passes it into the page. You can check the waves at 3 of the most consistent waves in California, as well as your current weather conditions. This app is built in jQuery/js as a single page application.",
     tools: ["AJAX", "JSON", "js/jQuery", "css"],
     browsers: ["Chrome 44", "Firefox 39", "Safari 8", "IE 11"],
-    links: ["/waves/", "https://github.com/bwynn/waves_js/"]
+    links: ["/waves", "https://github.com/bwynn/waves_js/"]
   };
 
   var superCalcProject = {
