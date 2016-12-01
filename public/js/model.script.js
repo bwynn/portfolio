@@ -27,7 +27,7 @@ var model = (function() {
     content: "An ongoing personal project, this single page application gathers weather data from the WorldWeatherOnline API and passes it into the page. You can check the waves at 3 of the most consistent waves in California, as well as your current weather conditions. This app is built in jQuery/js as a single page application.",
     tools: ["AJAX", "JSON", "js/jQuery", "css"],
     browsers: ["Chrome 44", "Firefox 39", "Safari 8", "IE 11"],
-    links: ["/waves", "https://github.com/bwynn/waves_js/"]
+    links: ["https://waves-forecast.herokuapp.com/", "https://github.com/bwynn/waves_js/"]
   };
 
   var superCalcProject = {
