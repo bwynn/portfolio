@@ -20,15 +20,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-// waves sub site
-app.get('/waves', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/sites/waves/index.html'));
-});
-
-app.get('/gallry', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/sites/gallery/demo/index.html'));
-});
-
 app.listen(port);
 
 console.log("Server running on port " + port);
