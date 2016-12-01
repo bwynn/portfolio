@@ -7,7 +7,7 @@ var model = (function() {
     content: "Gallry.js is a lightweight javascript image gallery slider library. Written in vanilla JavaScript, gallry.js is fully responsive and customizable, giving control over individual slide presentation, timing and easing control, and the ability to add as many instances of the gallery on the page as is desired.",
     tools: ["javascript", "", "", ""],
     browsers: ["Chrome 44/Mac OS X 10.10", "Firefox 39/Mac OS X 10.10", "Safari 8/Mac OS X 10.10", "IE 11/Win 8.1"],
-    links: ["/gallry", "https://github.com/bwynn/gallery"]
+    links: ["https://gallry-js.herokuapp.com/", "https://github.com/bwynn/gallery"]
   };
 
   var ndProject = {
